@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vier gewinnt!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+    <script type="module" src="js/drawing.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body >
+
+    <div class="indicatorContainer indicatorContainerLeft">
+    <div id="indicatorBlue"></div><p class="indicatorContainerDescription">Blau ist dran!</p>
+</div>
+<div class="indicatorContainer indicatorContainerRight">
+    <div id="indicatorRed"></div><p class="indicatorContainerDescription">Rot ist dran!</p>
+</div>
+</div>
+
+<script>
+
+$("div.indicatorContainerLeft").hide();
+$("div.indicatorContainerRight").show();
+
+</script>
+
+<div id="container">
+
+<div id="playfield">
+    <div class="column" id="column1" onclick="putChip(0)">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="column" id="column2" onclick="putChip(1)">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="column" id="column3" onclick="putChip(2)">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="column" id="column4" onclick="putChip(3)">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="column" id="column5" onclick="putChip(4)">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="column" id="column6" onclick="putChip(5)">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="column" id="column7" onclick="putChip(6)">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div id="restart">
+        <a href="javascript:location.reload()" id="first"></a>
+        <a href="javascript:location.reload()">Spiel neu starten</a>
+    </div>
+</div>
+    </div>
+<div id="anleitung">
+    <a href="javascript:location.reload()">Spiel neu starten</a>
+</div>
+
+
+</body>
+</html>
